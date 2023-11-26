@@ -47,6 +47,7 @@ const Login = () => {
         <div className="glass-login w-full h-full flex justify-center items-center">
           <form
             onSubmit={form.onSubmit(async (values) => {
+              nav("/");
               // console.log("value", values);
               try {
                 const data = await login(values);
