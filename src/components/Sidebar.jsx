@@ -75,7 +75,7 @@ const Sidebar = () => {
             </Accordion.Control>
 
             <Link to={"/cashier"} onClick={() => liHandler("cashier")}>
-              <Accordion.Panel className="hover:border-l-4 border-zinc-500 accordion-bg accordion-li li-text w-full">
+              <Accordion.Panel className="hover:border-l-4  border-zinc-500 accordion-bg accordion-li li-text w-full transition duration-[2000ms] ease-in-out ">
                 <p
                   className={`${
                     sidebarActived === "cashier" && saleClose===false
@@ -89,7 +89,7 @@ const Sidebar = () => {
               </Accordion.Panel>
             </Link>
             <Link to={"/recent"} onClick={() => liHandler("recent")}>
-              <Accordion.Panel className="accordion-bg hover:border-l-4 border-zinc-500 li-text ">
+              <Accordion.Panel className="accordion-bg hover:border-l-4 border-zinc-500 li-text transition duration-[2000ms] ease-in-out">
                 <p
                   className={`${
                     sidebarActived === "recent"
@@ -121,7 +121,7 @@ const Sidebar = () => {
               </p>
             </Accordion.Control>
             <Link to={"/products"} onClick={() => liHandler("products")}>
-              <Accordion.Panel className="hover:border-l-4 border-zinc-500 accordion-bg li-text">
+              <Accordion.Panel className="hover:border-l-4 border-zinc-500 accordion-bg li-text transition duration-500 ">
                 <p
                   className={`${
                     sidebarActived === "products"
@@ -135,7 +135,7 @@ const Sidebar = () => {
               </Accordion.Panel>
             </Link>
             <Link to={"/add-product"} onClick={addProductHandler} className=" ">
-              <Accordion.Panel className="hover:border-l-4 border-zinc-500 accordion-bg li-text">
+              <Accordion.Panel className="hover:border-l-4 border-zinc-500 accordion-bg li-text transition duration-500">
                 <p
                   className={` ${
                     sidebarActived === "add product"
