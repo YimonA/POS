@@ -18,6 +18,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { useVoucherMutation } from "../redux/api/cashierApi";
 import SaleCloseGuard from "./SaleCloseGuard";
 import { Loader } from "@mantine/core";
+import lemon from "/lemon.avif";
+import pineapple from "/pineapple.avif";
+import strawberries from "/strawberries.avif";
 
 const Cashier = () => {
   const nav = useNavigate();
@@ -34,6 +37,7 @@ const Cashier = () => {
     {
       id: 3,
       name: "nisi",
+      img_src:lemon,
       actual_price: 275,
       sale_price: 325,
       total_stock: 383,
@@ -48,6 +52,7 @@ const Cashier = () => {
     {
       id: 4,
       name: "consequatur",
+      img_src:pineapple,
       actual_price: 976,
       sale_price: 1026,
       total_stock: 318,
@@ -62,6 +67,7 @@ const Cashier = () => {
     {
       id: 5,
       name: "omnis",
+      img_src:strawberries,
       actual_price: 396,
       sale_price: 446,
       total_stock: 363,
@@ -217,8 +223,8 @@ const Cashier = () => {
                       className="w-[170px] h-[200px] flex flex-col border-[1px] border-[var(--border-color)] rounded-[5px] cursor-pointer"
                     >
                       <img
-                        // src={product?.photo}
-                        src={`https://h.mmsdev.site/storage/photos/FR9QfU5OmbZlybJUSXFZjaipeVZqxBU7Cr3CKiyw.jpg`}
+                        src={product?.img_src}
+                        // src={`https://h.mmsdev.site/storage/photos/FR9QfU5OmbZlybJUSXFZjaipeVZqxBU7Cr3CKiyw.jpg`}
                         className="w-[170px] h-[120px] object-cover object-center"
                         alt=""
                       />

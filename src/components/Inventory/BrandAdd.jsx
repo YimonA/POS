@@ -108,6 +108,7 @@ const BrandAdd = () => {
             value={brandName}
             onChange={(e) => setBrandName(e.target.value)}
             className="w-[100%] h-[30px] px-2 py-1 border-2 rounded-[5px] border-[var(--border-color)] bg-[var(--base-color)] text-[var(--secondary-color)]"
+            required
           />
           <label
             htmlFor=""
@@ -120,6 +121,7 @@ const BrandAdd = () => {
             value={companyName}
             onChange={(e) => setCompanyName(e.target.value)}
             className="w-[100%] h-[30px] px-2 py-1 border-2 rounded-[5px] border-[var(--border-color)] bg-[var(--base-color)] text-[var(--secondary-color)]"
+            required
           />
           <label
             htmlFor=""
@@ -132,6 +134,7 @@ const BrandAdd = () => {
             value={agentName}
             onChange={(e) => setAgentName(e.target.value)}
             className="w-[100%] h-[30px] px-2 py-1 border-2 rounded-[5px] border-[var(--border-color)] bg-[var(--base-color)] text-[var(--secondary-color)]"
+            required
           />
           <label
             htmlFor=""
@@ -144,6 +147,7 @@ const BrandAdd = () => {
             value={phoneNo}
             onChange={(e) => setPhoneNo(e.target.value)}
             className="w-[100%] h-[30px] px-2 py-1 border-2 rounded-[5px] border-[var(--border-color)] bg-[var(--base-color)] text-[var(--secondary-color)]"
+            required
           />
           <label
             htmlFor=""
@@ -155,6 +159,7 @@ const BrandAdd = () => {
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
             className="w-[100%] h-[60px] px-2 py-1 border-2 rounded-[5px] border-[var(--border-color)] bg-[var(--base-color)] text-[var(--secondary-color)]"
+            required
           />
           <button
             onClick={SaveHandler}

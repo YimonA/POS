@@ -79,7 +79,7 @@ const AddBrandSelectImg = () => {
           showInsertBtn ? "opacity-100" : "opacity-0"
         } w-[100px] h-[40px] font-semibold text-[16px] myBlueBtn ml-auto mb-5`}
       >
-        insert
+        Insert
       </button>
     </div>
   );
